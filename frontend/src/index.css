@@ -1,0 +1,9 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+/* WHY: tiny custom CSS - Tailwind handles the rest. */
+body { @apply bg-slate-100 text-slate-900; }
+table { @apply w-full text-sm; }
+th, td { @apply border px-2 py-1 text-left; }
+input, select, textarea { @apply border rounded px-2 py-1 w-full; }
+button { @apply bg-slate-800 text-white rounded px-3 py-1 disabled:opacity-50; }
+button.danger { @apply bg-red-700; }
+.badge { @apply inline-block rounded px-2 text-xs text-white; }
